@@ -2,6 +2,7 @@ import React from 'react';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import L from 'leaflet'
 import carTemporary from '../img/temporary-photo.png'
+import '../style/MapWrapper.css';
 
 class MapWrapper extends React.Component {
 
@@ -48,25 +49,25 @@ class MapWrapper extends React.Component {
         return (
           <Marker position={[val.location.latitude, val.location.longitude]} icon={this.setDynamicMarkerColor(val.status)} key={val.id} >
             <Popup>
-              <div className="vehiclePopup">
-                <div className="textColumn">
+              <div className="vehicle-popup">
+                <div className="text-column">
                   <div>{val.name}</div>
                   <div>{val.platesNumber}</div>
 
                   
-                  <div className="rangeText">
+                  <div className="range-text">
                     Range: {val.rangeKm} km
                   </div>
 
-                  <div className="statusWrapper" style={{ backgroundColor: this.setDynamicStatusColor(val.status)}}>
+                  <div className="status-wrapper" style={{ backgroundColor: this.setDynamicStatusColor(val.status)}}>
                     {val.status}
                   </div>
                   
                 </div>
-                <div className="photoColumn">
+                <div className="photo-column">
                   <img src={carTemporary} alt="Car"/>
-                  <div className="myProgress">
-                    <div className="myBar" style={{ width: `${val.batteryLevelPct}%` }}></div>
+                  <div className="my-progress">
+                    <div className="my-bar" style={{ width: `${val.batteryLevelPct}%` }}></div>
                   </div>
                 </div>
               </div>

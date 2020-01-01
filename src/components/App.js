@@ -30,7 +30,7 @@ export class App extends React.Component {
     return (
       <div className="container">
         <header className="row">
-          <h1 className="text-center">Check our map</h1>     
+          <h1>Check our map</h1>     
         </header>
   
         <Filtres setFilterKilometersRange={this.setFilterKilometersRange} setFilterAvailable={this.setFilterAvailable} stateAvailable={this.state.available} stateKilometersRange={this.state.kilometersRange}></Filtres>

@@ -1,0 +1,43 @@
+.vehicle-popup {
+  display: flex;
+}
+
+.vehicle-popup .text-column {
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.vehicle-popup .text-column .range-text {
+  display: inline-block;
+}
+
+.vehicle-popup .text-column .status-wrapper {
+  background-color: #28A745;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 8px;
+}
+
+.vehicle-popup .photo-column img {
+  height: 50px;
+  width: 50px;
+  margin-left: 30px;
+}
+
+.vehicle-popup .photo-column .my-progress {
+  width: 50px;
+  background-color: grey;
+  margin-left: 30px;
+  margin-top: 8px;
+}
+
+.vehicle-popup .photo-column .my-bar {
+  width: 1%;
+  height: 10px;
+  background-color: #28A745;
+}
