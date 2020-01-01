@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MapWrapper from './MapWrapper'
+import Filtres from './Filtres'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+export class App extends React.Component {
+
+  state = {
+    available: false,
+    kilometersRange: { min: 0, max: 300 },
+  };
+
+
+  setFilterKilometersRange = (value) => {
+
+    this.setState(prevState => {
+      let kilometersRange = Object.assign({}, prevState.kilometersRange);
+      kilometersRange.min = value.value.min;
+      kilometersRange.max = value.value.max;                
+      return { kilometersRange };
+    })
+    
+  }
+
+  setFilterAvailable = () => {this.setState({available: !this.state.available})}
+
+  render() {
+    return (
+      <div className="container">
+        <header className="row">
+          <h1 className="text-center">Check our map</h1>     
+        </header>
+  
+        <Filtres setFilterKilometersRange={this.setFilterKilometersRange} setFilterAvailable={this.setFilterAvailable} stateAvailable={this.state.available} stateKilometersRange={this.state.kilometersRange}></Filtres>
+
+        <MapWrapper filterAvailable={this.state.available} filterKilometersRange={this.state.kilometersRange}></MapWrapper>
+  
+      </div>
+    );
+  }
+  
 }
 
 export default App;
