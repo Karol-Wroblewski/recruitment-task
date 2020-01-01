@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/recruitment-task/static/css/main.668853a0.chunk.css",
-    "main.js": "/recruitment-task/static/js/main.9f1c5ad7.chunk.js",
-    "main.js.map": "/recruitment-task/static/js/main.9f1c5ad7.chunk.js.map",
+    "main.css": "/recruitment-task/static/css/main.6f634f02.chunk.css",
+    "main.js": "/recruitment-task/static/js/main.6da4f9de.chunk.js",
+    "main.js.map": "/recruitment-task/static/js/main.6da4f9de.chunk.js.map",
     "runtime-main.js": "/recruitment-task/static/js/runtime-main.3526a695.js",
     "runtime-main.js.map": "/recruitment-task/static/js/runtime-main.3526a695.js.map",
     "static/css/2.b592541c.chunk.css": "/recruitment-task/static/css/2.b592541c.chunk.css",
-    "static/js/2.d3d1eebd.chunk.js": "/recruitment-task/static/js/2.d3d1eebd.chunk.js",
-    "static/js/2.d3d1eebd.chunk.js.map": "/recruitment-task/static/js/2.d3d1eebd.chunk.js.map",
+    "static/js/2.2f8cddfb.chunk.js": "/recruitment-task/static/js/2.2f8cddfb.chunk.js",
+    "static/js/2.2f8cddfb.chunk.js.map": "/recruitment-task/static/js/2.2f8cddfb.chunk.js.map",
     "index.html": "/recruitment-task/index.html",
-    "precache-manifest.ffd8a78bce3652e4a061b7f304c7f6b9.js": "/recruitment-task/precache-manifest.ffd8a78bce3652e4a061b7f304c7f6b9.js",
+    "precache-manifest.163d94da09b1fbbe594a1d4538faf9e4.js": "/recruitment-task/precache-manifest.163d94da09b1fbbe594a1d4538faf9e4.js",
     "service-worker.js": "/recruitment-task/service-worker.js",
     "static/css/2.b592541c.chunk.css.map": "/recruitment-task/static/css/2.b592541c.chunk.css.map",
-    "static/css/main.668853a0.chunk.css.map": "/recruitment-task/static/css/main.668853a0.chunk.css.map",
-    "static/js/2.d3d1eebd.chunk.js.LICENSE": "/recruitment-task/static/js/2.d3d1eebd.chunk.js.LICENSE",
+    "static/css/main.6f634f02.chunk.css.map": "/recruitment-task/static/css/main.6f634f02.chunk.css.map",
+    "static/js/2.2f8cddfb.chunk.js.LICENSE": "/recruitment-task/static/js/2.2f8cddfb.chunk.js.LICENSE",
     "static/media/temporary-photo.png": "/recruitment-task/static/media/temporary-photo.41231ccc.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3526a695.js",
     "static/css/2.b592541c.chunk.css",
-    "static/js/2.d3d1eebd.chunk.js",
-    "static/css/main.668853a0.chunk.css",
-    "static/js/main.9f1c5ad7.chunk.js"
+    "static/js/2.2f8cddfb.chunk.js",
+    "static/css/main.6f634f02.chunk.css",
+    "static/js/main.6da4f9de.chunk.js"
   ]
 }
