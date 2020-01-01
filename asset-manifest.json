@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/recruitment-task/static/css/main.07dcbbff.chunk.css",
+    "main.js": "/recruitment-task/static/js/main.a07598d0.chunk.js",
+    "main.js.map": "/recruitment-task/static/js/main.a07598d0.chunk.js.map",
+    "runtime-main.js": "/recruitment-task/static/js/runtime-main.3526a695.js",
+    "runtime-main.js.map": "/recruitment-task/static/js/runtime-main.3526a695.js.map",
+    "static/css/2.b592541c.chunk.css": "/recruitment-task/static/css/2.b592541c.chunk.css",
+    "static/js/2.b41ba6bc.chunk.js": "/recruitment-task/static/js/2.b41ba6bc.chunk.js",
+    "static/js/2.b41ba6bc.chunk.js.map": "/recruitment-task/static/js/2.b41ba6bc.chunk.js.map",
+    "index.html": "/recruitment-task/index.html",
+    "precache-manifest.2c79a1c988212b8900035ac3676a3779.js": "/recruitment-task/precache-manifest.2c79a1c988212b8900035ac3676a3779.js",
+    "service-worker.js": "/recruitment-task/service-worker.js",
+    "static/css/2.b592541c.chunk.css.map": "/recruitment-task/static/css/2.b592541c.chunk.css.map",
+    "static/css/main.07dcbbff.chunk.css.map": "/recruitment-task/static/css/main.07dcbbff.chunk.css.map",
+    "static/js/2.b41ba6bc.chunk.js.LICENSE": "/recruitment-task/static/js/2.b41ba6bc.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3526a695.js",
+    "static/css/2.b592541c.chunk.css",
+    "static/js/2.b41ba6bc.chunk.js",
+    "static/css/main.07dcbbff.chunk.css",
+    "static/js/main.a07598d0.chunk.js"
+  ]
+}
