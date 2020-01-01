@@ -1,6 +1,7 @@
 import React from 'react';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import L from 'leaflet'
+import carTemporary from '../img/temporary-photo.png'
 
 class MapWrapper extends React.Component {
 
@@ -63,7 +64,7 @@ class MapWrapper extends React.Component {
                   
                 </div>
                 <div className="photoColumn">
-                  <img src="../cars/temporary-photo.png" alt=""/>
+                  <img src={carTemporary} alt="Car"/>
                   <div className="myProgress">
                     <div className="myBar" style={{ width: `${val.batteryLevelPct}%` }}></div>
                   </div>
