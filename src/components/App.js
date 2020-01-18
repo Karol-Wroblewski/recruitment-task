@@ -2,40 +2,24 @@ import React from 'react';
 import '../style/App.css';
 import MapWrapper from './MapWrapper'
 import Filtres from './Filtres'
+import Header from './Header'
+import Banner from './Banner'
 
-
+import * as actions from '../store/actions/index';
+import { connect } from 'react-redux';
 
 export class App extends React.Component {
 
-  state = {
-    available: false,
-    kilometersRange: { min: 0, max: 300 },
-  };
-
-
-  setFilterKilometersRange = (value) => {
-
-    this.setState(prevState => {
-      let kilometersRange = Object.assign({}, prevState.kilometersRange);
-      kilometersRange.min = value.value.min;
-      kilometersRange.max = value.value.max;                
-      return { kilometersRange };
-    })
-    
-  }
-
-  setFilterAvailable = () => {this.setState({available: !this.state.available})}
-
   render() {
     return (
-      <div className="container">
-        <header className="row">
-          <h1>Check our map</h1>     
-        </header>
-  
-        <Filtres setFilterKilometersRange={this.setFilterKilometersRange} setFilterAvailable={this.setFilterAvailable} stateAvailable={this.state.available} stateKilometersRange={this.state.kilometersRange}></Filtres>
+      <div className="container-fluid">
+        
+        <Header></Header>
+        <Banner></Banner>
+        <Filtres setFilterKilometersRange={this.props.onChangedKilometersRange} setFilterAvailable={this.props.onAvailableChanged} stateAvailable={this.props.available} stateKilometersRange={this.props.kilometersRange}></Filtres>
 
-        <MapWrapper filterAvailable={this.state.available} filterKilometersRange={this.state.kilometersRange}></MapWrapper>
+        {/* <MapWrapper filterAvailable={this.props.available} filterKilometersRange={this.props.kilometersRange}></MapWrapper> */}
+        <MapWrapper></MapWrapper>
   
       </div>
     );
@@ -43,4 +27,19 @@ export class App extends React.Component {
   
 }
 
-export default App;
+
+const mapStateToProps = state => {
+  return {
+    available: state.App.available,
+    kilometersRange: state.App.kilometersRange
+  };
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+      onAvailableChanged: () => dispatch(actions.setAvailableFilter()),
+      onChangedKilometersRange: (value) => dispatch(actions.setKilometersRangeFilter(value))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

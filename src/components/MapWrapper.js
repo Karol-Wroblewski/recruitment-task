@@ -3,6 +3,10 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import L from 'leaflet'
 import carTemporary from '../img/temporary-photo.png'
 import '../style/MapWrapper.css';
+import * as actions from '../store/actions/index';
+import MarkerClusterGroup from 'react-leaflet-markercluster';
+
+import { connect } from 'react-redux';
 
 class MapWrapper extends React.Component {
 
@@ -13,11 +17,10 @@ class MapWrapper extends React.Component {
       vehiclesDownloaded: false,
     }
   }
-// CONNECT TO API
+
+  // CONNECT TO API
   componentDidMount() {
-    fetch("https://dev.vozilla.pl/api-client-portal/map?objectType=VEHICLE")
-      .then(res => res.json())
-      .then(json => {this.setState({vehicles: json.objects, vehiclesDownloaded: true}); this.forceUpdate()});
+    this.props.initVehicles();
   }
 
 
@@ -35,8 +38,8 @@ class MapWrapper extends React.Component {
   render() {
 
     let listVehicles = [];
-    if (this.state.vehiclesDownloaded) {
-      listVehicles = this.state.vehicles;
+    if (this.props.downloaded) {
+      listVehicles = this.props.vehicles;
 
       // FILTER OBJECTS
       if(this.props.filterAvailable) { //SHOW ONLY AVAILABLE
@@ -86,10 +89,34 @@ class MapWrapper extends React.Component {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
         />
-        { listVehicles }
+        <MarkerClusterGroup>
+          { listVehicles }
+        </MarkerClusterGroup>
+          {/* <MarkerClusterGroup>
+            <Marker position={[49.8397, 24.0297]} />
+            <Marker position={[52.2297, 21.0122]} />
+            <Marker position={[51.5074, -0.0901]} />
+          </MarkerClusterGroup> */}
+        
       </Map>
     );
   }
 }
 
-export default MapWrapper;
+const mapStateToProps = state => {
+  return {
+      vehicles: state.MapWrapper.vehicles,
+      error: state.MapWrapper.error,
+      downloaded: state.MapWrapper.downloaded,
+      filterAvailable: state.App.available,
+      filterKilometersRange: state.App.kilometersRange,
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+      initVehicles: () => dispatch( actions.initVehicles() )
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MapWrapper);
