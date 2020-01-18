@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/recruitment-task/static/css/main.d4ab2764.chunk.css",
-    "main.js": "/recruitment-task/static/js/main.a508926a.chunk.js",
-    "main.js.map": "/recruitment-task/static/js/main.a508926a.chunk.js.map",
-    "runtime-main.js": "/recruitment-task/static/js/runtime-main.3526a695.js",
-    "runtime-main.js.map": "/recruitment-task/static/js/runtime-main.3526a695.js.map",
+    "main.js": "/recruitment-task/static/js/main.ddd84a1c.chunk.js",
+    "main.js.map": "/recruitment-task/static/js/main.ddd84a1c.chunk.js.map",
+    "runtime-main.js": "/recruitment-task/static/js/runtime-main.18318782.js",
+    "runtime-main.js.map": "/recruitment-task/static/js/runtime-main.18318782.js.map",
     "static/css/2.b592541c.chunk.css": "/recruitment-task/static/css/2.b592541c.chunk.css",
-    "static/js/2.938172cd.chunk.js": "/recruitment-task/static/js/2.938172cd.chunk.js",
-    "static/js/2.938172cd.chunk.js.map": "/recruitment-task/static/js/2.938172cd.chunk.js.map",
+    "static/js/2.ec8c3c27.chunk.js": "/recruitment-task/static/js/2.ec8c3c27.chunk.js",
+    "static/js/2.ec8c3c27.chunk.js.map": "/recruitment-task/static/js/2.ec8c3c27.chunk.js.map",
     "index.html": "/recruitment-task/index.html",
-    "precache-manifest.83f7f37015eac6955a02134badd93bef.js": "/recruitment-task/precache-manifest.83f7f37015eac6955a02134badd93bef.js",
+    "precache-manifest.b2da46b42432d8e90bc9c495cd0ff774.js": "/recruitment-task/precache-manifest.b2da46b42432d8e90bc9c495cd0ff774.js",
     "service-worker.js": "/recruitment-task/service-worker.js",
     "static/css/2.b592541c.chunk.css.map": "/recruitment-task/static/css/2.b592541c.chunk.css.map",
     "static/css/main.d4ab2764.chunk.css.map": "/recruitment-task/static/css/main.d4ab2764.chunk.css.map",
-    "static/js/2.938172cd.chunk.js.LICENSE": "/recruitment-task/static/js/2.938172cd.chunk.js.LICENSE",
+    "static/js/2.ec8c3c27.chunk.js.LICENSE": "/recruitment-task/static/js/2.ec8c3c27.chunk.js.LICENSE",
     "static/media/google-play-download.png": "/recruitment-task/static/media/google-play-download.afffae96.png",
     "static/media/temporary-photo.png": "/recruitment-task/static/media/temporary-photo.41231ccc.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3526a695.js",
+    "static/js/runtime-main.18318782.js",
     "static/css/2.b592541c.chunk.css",
-    "static/js/2.938172cd.chunk.js",
+    "static/js/2.ec8c3c27.chunk.js",
     "static/css/main.d4ab2764.chunk.css",
-    "static/js/main.a508926a.chunk.js"
+    "static/js/main.ddd84a1c.chunk.js"
   ]
 }
