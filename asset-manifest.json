@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/recruitment-task/static/css/main.43fd22e0.chunk.css",
-    "main.js": "/recruitment-task/static/js/main.89465cd7.chunk.js",
-    "main.js.map": "/recruitment-task/static/js/main.89465cd7.chunk.js.map",
+    "main.css": "/recruitment-task/static/css/main.f04e77a7.chunk.css",
+    "main.js": "/recruitment-task/static/js/main.ae4b8176.chunk.js",
+    "main.js.map": "/recruitment-task/static/js/main.ae4b8176.chunk.js.map",
     "runtime-main.js": "/recruitment-task/static/js/runtime-main.18318782.js",
     "runtime-main.js.map": "/recruitment-task/static/js/runtime-main.18318782.js.map",
     "static/css/2.b592541c.chunk.css": "/recruitment-task/static/css/2.b592541c.chunk.css",
-    "static/js/2.73fa57bc.chunk.js": "/recruitment-task/static/js/2.73fa57bc.chunk.js",
-    "static/js/2.73fa57bc.chunk.js.map": "/recruitment-task/static/js/2.73fa57bc.chunk.js.map",
+    "static/js/2.d0bf3cc1.chunk.js": "/recruitment-task/static/js/2.d0bf3cc1.chunk.js",
+    "static/js/2.d0bf3cc1.chunk.js.map": "/recruitment-task/static/js/2.d0bf3cc1.chunk.js.map",
     "index.html": "/recruitment-task/index.html",
-    "precache-manifest.4612b5f14759e22caebc105c94e9efee.js": "/recruitment-task/precache-manifest.4612b5f14759e22caebc105c94e9efee.js",
+    "precache-manifest.49b5c764d74fcaf0c34a06375adaf0e3.js": "/recruitment-task/precache-manifest.49b5c764d74fcaf0c34a06375adaf0e3.js",
     "service-worker.js": "/recruitment-task/service-worker.js",
     "static/css/2.b592541c.chunk.css.map": "/recruitment-task/static/css/2.b592541c.chunk.css.map",
-    "static/css/main.43fd22e0.chunk.css.map": "/recruitment-task/static/css/main.43fd22e0.chunk.css.map",
-    "static/js/2.73fa57bc.chunk.js.LICENSE": "/recruitment-task/static/js/2.73fa57bc.chunk.js.LICENSE",
-    "static/media/bmw.png": "/recruitment-task/static/media/bmw.5d903ddd.png",
+    "static/css/main.f04e77a7.chunk.css.map": "/recruitment-task/static/css/main.f04e77a7.chunk.css.map",
+    "static/js/2.d0bf3cc1.chunk.js.LICENSE": "/recruitment-task/static/js/2.d0bf3cc1.chunk.js.LICENSE",
     "static/media/google-play-download.png": "/recruitment-task/static/media/google-play-download.afffae96.png",
     "static/media/temporary-photo.png": "/recruitment-task/static/media/temporary-photo.41231ccc.png"
   },
   "entrypoints": [
     "static/js/runtime-main.18318782.js",
     "static/css/2.b592541c.chunk.css",
-    "static/js/2.73fa57bc.chunk.js",
-    "static/css/main.43fd22e0.chunk.css",
-    "static/js/main.89465cd7.chunk.js"
+    "static/js/2.d0bf3cc1.chunk.js",
+    "static/css/main.f04e77a7.chunk.css",
+    "static/js/main.ae4b8176.chunk.js"
   ]
 }
