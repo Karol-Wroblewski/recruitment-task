@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/recruitment-task/static/css/main.d4ab2764.chunk.css",
-    "main.js": "/recruitment-task/static/js/main.01b9f4ab.chunk.js",
-    "main.js.map": "/recruitment-task/static/js/main.01b9f4ab.chunk.js.map",
+    "main.css": "/recruitment-task/static/css/main.43fd22e0.chunk.css",
+    "main.js": "/recruitment-task/static/js/main.89465cd7.chunk.js",
+    "main.js.map": "/recruitment-task/static/js/main.89465cd7.chunk.js.map",
     "runtime-main.js": "/recruitment-task/static/js/runtime-main.18318782.js",
     "runtime-main.js.map": "/recruitment-task/static/js/runtime-main.18318782.js.map",
     "static/css/2.b592541c.chunk.css": "/recruitment-task/static/css/2.b592541c.chunk.css",
-    "static/js/2.ec8c3c27.chunk.js": "/recruitment-task/static/js/2.ec8c3c27.chunk.js",
-    "static/js/2.ec8c3c27.chunk.js.map": "/recruitment-task/static/js/2.ec8c3c27.chunk.js.map",
+    "static/js/2.73fa57bc.chunk.js": "/recruitment-task/static/js/2.73fa57bc.chunk.js",
+    "static/js/2.73fa57bc.chunk.js.map": "/recruitment-task/static/js/2.73fa57bc.chunk.js.map",
     "index.html": "/recruitment-task/index.html",
-    "precache-manifest.9163cd6c93d8c66fc7b15705af6a655f.js": "/recruitment-task/precache-manifest.9163cd6c93d8c66fc7b15705af6a655f.js",
+    "precache-manifest.4612b5f14759e22caebc105c94e9efee.js": "/recruitment-task/precache-manifest.4612b5f14759e22caebc105c94e9efee.js",
     "service-worker.js": "/recruitment-task/service-worker.js",
     "static/css/2.b592541c.chunk.css.map": "/recruitment-task/static/css/2.b592541c.chunk.css.map",
-    "static/css/main.d4ab2764.chunk.css.map": "/recruitment-task/static/css/main.d4ab2764.chunk.css.map",
-    "static/js/2.ec8c3c27.chunk.js.LICENSE": "/recruitment-task/static/js/2.ec8c3c27.chunk.js.LICENSE",
+    "static/css/main.43fd22e0.chunk.css.map": "/recruitment-task/static/css/main.43fd22e0.chunk.css.map",
+    "static/js/2.73fa57bc.chunk.js.LICENSE": "/recruitment-task/static/js/2.73fa57bc.chunk.js.LICENSE",
+    "static/media/bmw.png": "/recruitment-task/static/media/bmw.5d903ddd.png",
     "static/media/google-play-download.png": "/recruitment-task/static/media/google-play-download.afffae96.png",
     "static/media/temporary-photo.png": "/recruitment-task/static/media/temporary-photo.41231ccc.png"
   },
   "entrypoints": [
     "static/js/runtime-main.18318782.js",
     "static/css/2.b592541c.chunk.css",
-    "static/js/2.ec8c3c27.chunk.js",
-    "static/css/main.d4ab2764.chunk.css",
-    "static/js/main.01b9f4ab.chunk.js"
+    "static/js/2.73fa57bc.chunk.js",
+    "static/css/main.43fd22e0.chunk.css",
+    "static/js/main.89465cd7.chunk.js"
   ]
 }
