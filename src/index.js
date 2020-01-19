@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style/index.css';
-import App from './components/App.js';
+import App from './containers/App.js';
 import 'bootstrap/dist/css/bootstrap.css';
-
-import reducer from './store/reducer';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';

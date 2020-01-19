@@ -13,3 +13,10 @@ export const setKilometersRangeFilter = ( obj ) => {
       kilometersRange: obj
   };
 };
+
+export const setFilterBrand = ( event ) => {
+  return {
+      type: actionTypes.SET_BRAND_FILTER,
+      brand: event.target.value
+  };
+};

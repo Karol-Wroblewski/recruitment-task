@@ -7,9 +7,7 @@ const initialState = {
 };
 
 const reducer = ( state = initialState, action ) => {
-  console.log("REDUCER: ", action);
   switch ( action.type ) {
-    
     case actionTypes.FETCH_VEHICLES:
       return {
         ...state,

@@ -4,7 +4,16 @@
   padding: 20px 10px;
   font-size: 22px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.filtres label {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.filtres label select {
+  margin-left: 8px;
 }
 
 .filtres .filterLabel {
@@ -63,10 +72,10 @@
 }
 
 .chechbox-container .checkmark:after {
-  left: 9px;
+  left: 10px;
   top: 5px;
-  width: 5px;
-  height: 10px;
+  width: 6px;
+  height: 13px;
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
@@ -83,6 +92,10 @@
 
   .filtres .filterLabel {
     width: 300px;
+  }
+
+  .select-brand {
+    display: none;
   }
 
 }

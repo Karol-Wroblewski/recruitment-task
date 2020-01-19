@@ -1,8 +1,9 @@
-import * as actionTypes from '../actions';
+import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
   available: false,
   kilometersRange: { min: 0, max: 300 },
+  brand: "All",
 };
 
 const reducer = ( state = initialState, action ) => {
@@ -19,6 +20,11 @@ const reducer = ( state = initialState, action ) => {
                   min: action.kilometersRange.value.min,
                   max: action.kilometersRange.value.max,
               },
+          };
+       case actionTypes.SET_BRAND_FILTER:
+          return {
+              ...state,
+              brand: action.brand
           };
       default:
           return state;

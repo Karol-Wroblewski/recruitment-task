@@ -5,24 +5,22 @@ import carTemporary from '../img/temporary-photo.png'
 import '../style/MapWrapper.css';
 import * as actions from '../store/actions/index';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
-
 import { connect } from 'react-redux';
+import Spinner from '../components/Spinner'
 
 class MapWrapper extends React.Component {
 
   constructor() {
-    super()
+    super();
     this.state = {
       vehicles: {},
       vehiclesDownloaded: false,
     }
   }
 
-  // CONNECT TO API
   componentDidMount() {
     this.props.initVehicles();
   }
-
 
   setDynamicMarkerColor(status) {
     return L.icon({
@@ -34,18 +32,19 @@ class MapWrapper extends React.Component {
     return status == 'AVAILABLE' ? '#28A745' : 'blue'
   }
 
-
   render() {
-
     let listVehicles = [];
     if (this.props.downloaded) {
       listVehicles = this.props.vehicles;
 
-      // FILTER OBJECTS
-      if(this.props.filterAvailable) { //SHOW ONLY AVAILABLE
+      if(this.props.filterAvailable) {
         listVehicles = listVehicles.filter(vehicle => vehicle.status == "AVAILABLE" )
       }
-      // SHOW ONLY IF OBJECT CAN COVER TYPED DISTANCE
+      if(this.props.brand != "All") {
+        listVehicles = listVehicles.filter(vehicle => vehicle.name.toLowerCase().includes(this.props.brand.toLowerCase()))
+      }
+      
+
       listVehicles = listVehicles.filter(vehicle => vehicle.rangeKm >= this.props.filterKilometersRange.min && vehicle.rangeKm <= this.props.filterKilometersRange.max )
 
       listVehicles = listVehicles.map((val) => {
@@ -56,16 +55,12 @@ class MapWrapper extends React.Component {
                 <div className="text-column">
                   <div>{val.name}</div>
                   <div>{val.platesNumber}</div>
-
-                  
                   <div className="range-text">
                     Range: {val.rangeKm} km
                   </div>
-
                   <div className="status-wrapper" style={{ backgroundColor: this.setDynamicStatusColor(val.status)}}>
                     {val.status}
                   </div>
-                  
                 </div>
                 <div className="photo-column">
                   <img src={carTemporary} alt="Car"/>
@@ -79,26 +74,22 @@ class MapWrapper extends React.Component {
         );
       });
     }
-
     
-
     const position = [52.2627124327, 21];
     return (
-      <Map center={position} zoom={13}>
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-        />
-        <MarkerClusterGroup>
-          { listVehicles }
-        </MarkerClusterGroup>
-          {/* <MarkerClusterGroup>
-            <Marker position={[49.8397, 24.0297]} />
-            <Marker position={[52.2297, 21.0122]} />
-            <Marker position={[51.5074, -0.0901]} />
-          </MarkerClusterGroup> */}
-        
-      </Map>
+      <div style={{opacity: this.props.downloaded ? '1' : '.6'}}>
+        <Map center={position} zoom={13}>
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+          />
+          {this.props.downloaded ? '' : <Spinner></Spinner>}
+          <MarkerClusterGroup>
+            { listVehicles }
+          </MarkerClusterGroup>        
+        </Map>
+      
+      </div>
     );
   }
 }
@@ -110,6 +101,7 @@ const mapStateToProps = state => {
       downloaded: state.MapWrapper.downloaded,
       filterAvailable: state.App.available,
       filterKilometersRange: state.App.kilometersRange,
+      brand: state.App.brand,
   };
 };
 

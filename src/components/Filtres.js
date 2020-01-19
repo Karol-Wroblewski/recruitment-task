@@ -5,15 +5,28 @@ import '../style/Filtres.css';
 
 function Filtres(props) {
 
+  let carBrandOptions = ['All', 'Nissan', 'Enigma' ]
+  let carBrandOptionsSelect = carBrandOptions.map((val) => {
+    return (
+      <option key={val} value={val}>{val}</option>
+    )
+  })
+
   return (
-    <div className="filtres">
+    <div className="filtres" style={{opacity: props.downloaded ? '1' : '.6'}}>
       <label className="chechbox-container">Available
-        <input type="checkbox" onChange={props.setFilterAvailable} />
+        <input disabled={!props.downloaded} type="checkbox" onChange={props.setFilterBrand} />
         <span className="checkmark"></span>
       </label>
-
+      <label className="select-brand"> Brand
+        <select disabled={!props.downloaded} onChange={(event) => props.setFilterBrand(event)}>
+          {carBrandOptionsSelect}
+        </select>
+      </label>
+      
       <div className="filterLabel">Distance to drive:
         <InputRange
+        disabled={!props.downloaded}
         maxValue={300}
         minValue={0}
         formatLabel={value => `${value} km`}

@@ -1,0 +1,6 @@
+.spinner-border {
+  position: absolute;
+  z-index: 999;
+  top: calc(50% - 1rem);
+  left: calc(50% - 1rem);
+}

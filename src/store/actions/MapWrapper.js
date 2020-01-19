@@ -2,7 +2,6 @@ import * as actionTypes from './actionTypes';
 import { API_HOST } from '../../api-config';
 
 export const setVehicles = ( vehicles ) => {
-  console.log("VAHICLES: ", vehicles)
   return {
       type: actionTypes.FETCH_VEHICLES,
       vehiclesList: vehicles.objects,
