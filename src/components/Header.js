@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/logo1.png'
+import logo from '../img/logo.png'
 import '../style/Header.css';
 
 function Filtres() {
