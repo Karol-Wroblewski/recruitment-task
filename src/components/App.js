@@ -4,6 +4,8 @@ import MapWrapper from './MapWrapper'
 import Filtres from './Filtres'
 import Header from './Header'
 import Banner from './Banner'
+import Footer from './Footer'
+
 
 import * as actions from '../store/actions/index';
 import { connect } from 'react-redux';
@@ -18,9 +20,9 @@ export class App extends React.Component {
         <Banner></Banner>
         <Filtres setFilterKilometersRange={this.props.onChangedKilometersRange} setFilterAvailable={this.props.onAvailableChanged} stateAvailable={this.props.available} stateKilometersRange={this.props.kilometersRange}></Filtres>
 
-        {/* <MapWrapper filterAvailable={this.props.available} filterKilometersRange={this.props.kilometersRange}></MapWrapper> */}
         <MapWrapper></MapWrapper>
-  
+
+        <Footer></Footer>
       </div>
     );
   }

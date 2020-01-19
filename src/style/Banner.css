@@ -1,8 +1,57 @@
 .banner {
   text-align: center;
   padding: 16px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .banner img {
   height: 70px;
+}
+
+.banner h2 {
+  margin-bottom: 16px;
+}
+
+.banner img:nth-child(2) {
+  margin-right: 8px;
+}
+
+.advert {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.advert img {
+  height: 100px;
+}
+
+.advert .slogan {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 16px;
+}
+
+
+@media(max-width: 768px) {
+  .banner img {
+    height: 55px;
+  }
+
+  .banner h2 {
+    font-size: 20px;
+  }
+
+}
+
+@media(max-width: 430px) {
+  .banner img {
+    height: 35px;
+  }
+
+  .banner h2 {
+    font-size: 15px;
+  }
+
 }

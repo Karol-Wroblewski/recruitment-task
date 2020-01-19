@@ -1,0 +1,11 @@
+.collapse.navbar-collapse {
+  margin-left: 40px;
+}
+
+.nav-item .nav-link {
+  margin-right: 40px !important;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}

@@ -75,3 +75,54 @@
 }
 
 /*  */
+
+@media (max-width: 768px) {
+  .input-range {
+    width: 100px !important;
+  }
+
+  .filtres .filterLabel {
+    width: 300px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  .filtres {
+    flex-direction: column;
+  }
+
+  .filtres .filterLabel {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .filtres {
+    font-size: 17px;
+  }
+
+  .chechbox-container {
+    padding-left: 23px;
+  }
+
+  .checkmark {
+    height: 17px;
+    width: 17px;
+  }
+
+  .chechbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .filterLabel {
+    margin-right: 16px;
+    width: auto;
+  }
+}
